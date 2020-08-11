@@ -72,7 +72,7 @@ nav {
 
 #hero {
   margin-top: 190px;
-  background-image: url(/dist/images/hero.jpg);
+  background-image: url("/dist/images/hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 30vh;
