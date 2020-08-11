@@ -1,9 +1,7 @@
 const loadContent = () => {
   //loads the whole content of the page
   const domContent = document.getElementById("content");
-
   const navbar = document.createElement("nav");
-
   const navLeft = document.createElement("div");
   const icon = document.createElement("img");
   const hours = document.createElement("div");
@@ -24,10 +22,9 @@ const loadContent = () => {
   const conHead = document.createElement("p");
 
   navbar.id = "nav";
-
   navLeft.id = "nav-left";
   icon.id = "icon";
-  icon.src = "/dist/images/icon.png";
+  icon.src = "./images/icon.png";
   icon.alt = "restaurant logo";
   hours.id = "hours";
   mon.innerHTML = "Mon-Fri : 11am-8pm";
