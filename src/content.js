@@ -24,7 +24,7 @@ const loadContent = () => {
   navbar.id = "nav";
   navLeft.id = "nav-left";
   icon.id = "icon";
-  icon.src = "./images/icon.png";
+  icon.src = "./739d82a52e32385502f867d291e12ec2.png";
   icon.alt = "restaurant logo";
   hours.id = "hours";
   mon.innerHTML = "Mon-Fri : 11am-8pm";
