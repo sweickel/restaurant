@@ -1,3 +1,5 @@
+const dom = document.querySelector.bind(document);
+
 const loadContent = () => {
   //loads the whole content of the page
   const domContent = document.getElementById("content");
@@ -16,6 +18,7 @@ const loadContent = () => {
   const motto = document.createElement("p");
   const spacer = document.createElement("div");
   const info = document.createElement("p");
+  const start = document.createElement("button");
   const menu = document.createElement("div");
   const table = document.createElement("div");
   const contact = document.createElement("div");
@@ -26,6 +29,7 @@ const loadContent = () => {
   icon.id = "icon";
   icon.src = "./739d82a52e32385502f867d291e12ec2.png";
   icon.alt = "restaurant logo";
+  icon.href = "#home";
   hours.id = "hours";
   mon.innerHTML = "Mon-Fri : 11am-8pm";
   sat.innerHTML = "Sat-Sun : 11am-7pm";
@@ -34,8 +38,12 @@ const loadContent = () => {
   navRight.id = "nav-links";
   home.href = "#body";
   home.innerHTML = "Home";
-  menuLink.href = "#menu";
+  start.id = "menu-button";
+  start.type = "button";
+  start.innerHTML = "See Our Menu";
+  menuLink.id = "menu-link";
   menuLink.innerHTML = "Menu";
+  menuLink.href = "#menu-button";
   contactLink.href = "#contact";
   contactLink.innerHTML = "Contact";
   hero.id = "hero";
@@ -44,6 +52,7 @@ const loadContent = () => {
   info.innerHTML = `We've been here since we've been here, and we'll be here until we are
   not. We serve exclusively breakfast food.`;
   menu.id = "menu";
+  menu.style.display = "none";
   table.id = "table";
   contact.id = "contact";
   conHead.innerHTML = "Contact";
@@ -63,10 +72,14 @@ const loadContent = () => {
   hero.appendChild(motto);
   domContent.appendChild(spacer);
   spacer.appendChild(info);
+  domContent.appendChild(start);
   domContent.appendChild(menu);
-  menu.appendChild(table);
   domContent.appendChild(contact);
   contact.appendChild(conHead);
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 
   console.log("hi");
 };
