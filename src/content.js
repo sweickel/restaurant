@@ -20,16 +20,14 @@ const loadContent = () => {
   const info = document.createElement("p");
   const start = document.createElement("button");
   const menu = document.createElement("div");
-  const table = document.createElement("div");
   const contact = document.createElement("div");
   const conHead = document.createElement("p");
 
   navbar.id = "nav";
   navLeft.id = "nav-left";
   icon.id = "icon";
-  icon.src = "./739d82a52e32385502f867d291e12ec2.png";
   icon.alt = "restaurant logo";
-  icon.href = "#home";
+  icon.href = "#body";
   hours.id = "hours";
   mon.innerHTML = "Mon-Fri : 11am-8pm";
   sat.innerHTML = "Sat-Sun : 11am-7pm";
@@ -53,7 +51,6 @@ const loadContent = () => {
   not. We serve exclusively breakfast food.`;
   menu.id = "menu";
   menu.style.display = "none";
-  table.id = "table";
   contact.id = "contact";
   conHead.innerHTML = "Contact";
 
