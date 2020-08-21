@@ -37,19 +37,19 @@ const tabThree = () => {
   a4.classList.add("name");
   a5.classList.add("name");
 
-  n1.innerHTML = '<strong>"Extra Bacon"</strong>';
+  n1.innerHTML = '"Extra Bacon"';
   d1.innerHTML = "1/2 lb";
   p1.innerHTML = "$3.99";
-  n2.innerHTML = '<strong>"Extra egg"</strong>';
+  n2.innerHTML = '"Extra egg"';
   d2.innerHTML = "1 extra egg, cooked as ordered";
   p2.innerHTML = "$1.49";
-  n3.innerHTML = '<strong>"Pancakes"</strong>';
+  n3.innerHTML = '"Pancakes"';
   d3.innerHTML = "4 pancakes with  syrup and powdered sugar";
   p3.innerHTML = "$4.49";
-  n4.innerHTML = '<strong>"Hash Browns"</strong>';
+  n4.innerHTML = '"Hash Browns"';
   d4.innerHTML = "Whole side order";
   p4.innerHTML = "$5.49";
-  n5.innerHTML = '<strong>"Dessert"</strong>';
+  n5.innerHTML = '"Dessert"';
   d5.innerHTML = "Vanilla Ice Cream with Hot Fudge";
   p5.innerHTML = "$3.99";
 

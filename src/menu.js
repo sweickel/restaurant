@@ -49,6 +49,8 @@ const loadMenu = () => {
   titleBar.appendChild(omelettes);
   titleBar.appendChild(sides);
   dom("#menu").appendChild(table);
+  active(specials);
+  tabOne();
 
   const clearTable = () => {
     const tableLength = table.children.length;

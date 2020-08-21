@@ -37,19 +37,19 @@ const tabTwo = () => {
   a4.classList.add("name");
   a5.classList.add("name");
 
-  n1.innerHTML = '<strong>"Ron\'s Omelette"</strong>';
+  n1.innerHTML = '"Ron\'s Omelette"';
   d1.innerHTML = "5 eggs, Bacon, Sausage, Ham, Hashbrowns";
   p1.innerHTML = "$7.95";
-  n2.innerHTML = '<strong>"Veggie Omelette"</strong>';
+  n2.innerHTML = '"Veggie Omelette"';
   d2.innerHTML = "Green peppers, onions, garlic, spinach";
   p2.innerHTML = "$7.49";
-  n3.innerHTML = '<strong>"Chili Omelette"</strong>';
+  n3.innerHTML = '"Chili Omelette"';
   d3.innerHTML = "Covered will delicious chili, cheese, and onions";
   p3.innerHTML = "$6.49";
-  n4.innerHTML = '<strong>"Standard Omelette"</strong>';
+  n4.innerHTML = '"Standard Omelette"';
   d4.innerHTML = "Bacon and cheese";
   p4.innerHTML = "$5.49";
-  n5.innerHTML = '<strong>"Sweet Tooth"</strong>';
+  n5.innerHTML = '"Sweet Tooth"';
   d5.innerHTML =
     "Deep fried eggs and bacon, covered with syrup and whipped cream";
   p5.innerHTML = "$7.99";
