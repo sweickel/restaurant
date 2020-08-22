@@ -5,6 +5,8 @@ import "./style.css";
 
 import Icon from "./images/icon.png";
 
+import Phone from "./images/phone.png";
+
 import { loadMenu } from "./menu";
 
 import { loadContent } from "./content";
@@ -18,4 +20,5 @@ window.addEventListener("load", (event) => {
     });
   });
   dom("#icon").src = Icon;
+  dom("#phone").src = Phone;
 });

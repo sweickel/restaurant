@@ -18,10 +18,16 @@ const loadContent = () => {
   const motto = document.createElement("p");
   const spacer = document.createElement("div");
   const info = document.createElement("p");
+  const menuDiv = document.createElement("div");
   const start = document.createElement("button");
   const menu = document.createElement("div");
   const contact = document.createElement("div");
-  const conHead = document.createElement("p");
+  const contactPhone = document.createElement("div");
+  const phone = document.createElement("img");
+  const num = document.createElement("p");
+  const infoTwo = document.createElement("div");
+  const infoNam = document.createElement("p");
+  const address = document.createElement("p");
 
   navbar.id = "nav";
   navLeft.id = "nav-left";
@@ -36,14 +42,16 @@ const loadContent = () => {
   navRight.id = "nav-links";
   home.href = "#body";
   home.innerHTML = "Home";
+  menuDiv.id = "menu-div";
   start.id = "menu-button";
   start.type = "button";
   start.innerHTML = "See Our Menu";
   menuLink.id = "menu-link";
   menuLink.innerHTML = "Menu";
   menuLink.href = "#menu-button";
-  contactLink.href = "#contact";
+  contactLink.id = "contact-link";
   contactLink.innerHTML = "Contact";
+  contactLink.href = "#contact";
   hero.id = "hero";
   motto.innerHTML = `"Eat here, or don't. We are not beggars."`;
   spacer.id = "spacer";
@@ -52,7 +60,14 @@ const loadContent = () => {
   menu.id = "menu";
   menu.style.display = "none";
   contact.id = "contact";
-  conHead.innerHTML = "Contact";
+  contactPhone.id = "phoneDiv";
+  phone.id = "phone";
+  phone.alt = "phone icon";
+  num.innerHTML = "(555)555-1525";
+  infoTwo.id = "address";
+  infoNam.id = "address-name";
+  infoNam.innerHTML = "Good Food Diner";
+  address.innerHTML = "555 E. Lincoln Rd,<br>Warren, MI 48092";
 
   domContent.appendChild(navbar);
   navbar.appendChild(navLeft);
@@ -69,16 +84,20 @@ const loadContent = () => {
   hero.appendChild(motto);
   domContent.appendChild(spacer);
   spacer.appendChild(info);
-  domContent.appendChild(start);
-  domContent.appendChild(menu);
+  domContent.appendChild(menuDiv);
+  menuDiv.appendChild(start);
+  menuDiv.appendChild(menu);
   domContent.appendChild(contact);
-  contact.appendChild(conHead);
+  contact.appendChild(contactPhone);
+  contactPhone.appendChild(phone);
+  contactPhone.appendChild(num);
+  contact.appendChild(infoTwo);
+  infoTwo.appendChild(infoNam);
+  infoTwo.appendChild(address);
   window.scrollTo({
     top: 0,
     behavior: "smooth",
   });
-
-  console.log("hi");
 };
 
 export { loadContent };

@@ -38,10 +38,10 @@ const tabTwo = () => {
   a5.classList.add("name");
 
   n1.innerHTML = '"Ron\'s Omelette"';
-  d1.innerHTML = "5 eggs, Bacon, Sausage, Ham, Hashbrowns";
+  d1.innerHTML = "5 eggs, bacon, sausage, ham, and hashbrowns";
   p1.innerHTML = "$7.95";
   n2.innerHTML = '"Veggie Omelette"';
-  d2.innerHTML = "Green peppers, onions, garlic, spinach";
+  d2.innerHTML = "Green peppers, onions, garlic, and spinach";
   p2.innerHTML = "$7.49";
   n3.innerHTML = '"Chili Omelette"';
   d3.innerHTML = "Covered will delicious chili, cheese, and onions";

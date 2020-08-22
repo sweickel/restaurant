@@ -5,16 +5,19 @@ body {
   flex-direction: column;
   min-width: 360px;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   font-family: Helvetica, Arial, sans-serif;
 }
 
 #content {
   position: relative;
+  height: auto;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  justify-content: space-between;
+  width: 100vw;
 }
 
 nav {
@@ -57,8 +60,6 @@ nav {
 }
 
 #menu {
-  position: relative;
-  margin: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,6 +69,7 @@ nav {
   height: 600px;
   background-color: rgba(74, 109, 0, 0.65);
   border-radius: 5px;
+  margin-top: 40px;
 }
 
 #hero {
@@ -99,13 +101,12 @@ nav {
   display: flex;
   width: 100vw;
   min-height: 20vh;
-  height: auto;
+  height: 300px;
   background-color: rgb(131, 160, 60);
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border-bottom: 10px groove darkolivegreen;
-  margin-bottom: 50px;
 }
 
 #spacer p {
@@ -218,15 +219,52 @@ h3 {
   font-weight: 800;
 }
 
-#contact {
+#menu-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: auto;
-  align-self: center;
-  height: 30vh;
-  margin: 100px;
-  font-size: 30px;
+  min-height: 30vh;
+  width: 100%;
+}
+
+#contact {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  width: 100vw;
+  height: 100px;
+  font-size: 18px;
   color: white;
-  text-shadow: 2px 2px 2px black;
+  font-weight: 400;
+  background-color: rgba(0, 0, 0, 0.75);
+  margin-top: 40px;
+  justify-self: flex-end;
+}
+
+#contact p {
+  font-weight: 200;
+}
+
+#address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-right: 20px;
+  font-weight: 200;
+}
+
+#address-name {
   font-weight: 800;
+  font-size: 20px;
+}
+
+#address p {
+  margin: 5px;
 }
 
 .special {
@@ -273,6 +311,20 @@ h3 {
   margin-top: 2px;
 }
 
+#phoneDiv {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+#phone {
+  height: 40px;
+  width: auto;
+  margin-right: 5px;
+}
+
 @media (max-width: 450px) {
   body {
     min-width: 360px;
@@ -280,6 +332,7 @@ h3 {
 
   #hero p {
     font-size: 2rem;
+    width: 60%;
   }
 
   #spacer p {
