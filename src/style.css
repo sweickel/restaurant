@@ -189,8 +189,13 @@ h3 {
   padding-top: 0px;
 }
 
+#icon-link {
+  width: auto;
+  height: 100%;
+}
+
 #icon {
-  margin: 20px;
+  margin: 10px;
   width: auto;
   height: 90%;
   background-color: none;
@@ -255,7 +260,6 @@ h3 {
   align-items: center;
   justify-content: space-evenly;
   margin-right: 20px;
-  font-weight: 200;
 }
 
 #address-name {
@@ -265,6 +269,7 @@ h3 {
 
 #address p {
   margin: 5px;
+  font-weight: 200;
 }
 
 .special {

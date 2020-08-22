@@ -5,6 +5,7 @@ const loadContent = () => {
   const domContent = document.getElementById("content");
   const navbar = document.createElement("nav");
   const navLeft = document.createElement("div");
+  const iconLink = document.createElement("a");
   const icon = document.createElement("img");
   const hours = document.createElement("div");
   const mon = document.createElement("p");
@@ -31,9 +32,10 @@ const loadContent = () => {
 
   navbar.id = "nav";
   navLeft.id = "nav-left";
+  iconLink.id = "icon-link";
+  iconLink.href = "#body";
   icon.id = "icon";
   icon.alt = "restaurant logo";
-  icon.href = "#body";
   hours.id = "hours";
   mon.innerHTML = "Mon-Fri : 11am-8pm";
   sat.innerHTML = "Sat-Sun : 11am-7pm";
@@ -71,7 +73,8 @@ const loadContent = () => {
 
   domContent.appendChild(navbar);
   navbar.appendChild(navLeft);
-  navLeft.appendChild(icon);
+  navLeft.appendChild(iconLink);
+  iconLink.appendChild(icon);
   navLeft.appendChild(hours);
   hours.appendChild(mon);
   hours.appendChild(sat);
