@@ -348,6 +348,10 @@ h3 {
     font-size: 16px;
   }
 
+  #hero {
+    margin-top: 150px;
+  }
+
   .special {
     position: relative;
     font-size: 13px;
@@ -393,8 +397,35 @@ h3 {
     width: 95%;
   }
 
+  #icon-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   #icon {
     height: 65%;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 150px;
+  }
+
+  #address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+  }
+
+  #phoneDiv {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
   }
 }
 
